@@ -7,6 +7,7 @@ import antiGrayingSerum from "@/assets/products/Serum.png";
 import antiGrayingCombo from "@/assets/products/Combo.jpg";
 import champiOilImg from "@/assets/home/homeoil.jpg";
 import woodenCombImg from "@/assets/wooden-comb.jpg";
+import combImg from "@/assets/home/comb.png";
 import hairComb from "@/assets/products/haircomb.jpg";
 import keratinImg from "@/assets/keratin-range.jpg";
 import antiGrayingVideo from "@/assets/home/1G.mp4";
@@ -80,7 +81,7 @@ const products = [
     name: "Natural Wooden Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
-    img: woodenCombImg,
+    img: combImg,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
