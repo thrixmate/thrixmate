@@ -35,13 +35,13 @@ const About = () => {
       description: "A visionary entrepreneur passionate about merging Ayurvedic wisdom with modern science to revolutionize hair wellness across India and beyond.",
     }, 
     {
-      name: "Dr.Mohit Bhatia",
+      name: "Dr. Mohit Bhatia",
       designation: "Co-Founder & COO",
       image: visionary1Img,
       description: "With over a decade of experience in beauty innovation, Dr.Mohit Bhatia drives product development and ensures every formula meets the highest standards of purity.",
     },
     {
-      name: "Dr.Paras Bhatia",
+      name: "Dr. Paras Bhatia",
       designation: "Co-Founder & COO",
       image: visionary2Img,
       description: "Leads Operations and Digital Marketing with a strong blend of tech and marketing expertise. Focused on streamlining processes and delivering impactful customer experiences.",
@@ -88,8 +88,8 @@ const About = () => {
   ];
 
   const awards = [
-    { title: "Best Hair Wellness Brand", image: award1Img },
-    { title: "Beauty Excellence Award", image: award2Img },
+    { title: "Pharma Ratna 2023", image: award1Img },
+    { title: "Iconic Super Brand", image: award2Img },
     { title: "Innovation in Ayurvedic Science", image: award3Img },
     { title: "Clean Beauty Pioneer", image: award4Img },
     { title: "Top Emerging D2C Brand", image: award5Img },
@@ -99,10 +99,10 @@ const About = () => {
   const collaborations = [
     { image: collab1Img, caption: "Pharma Ratna Universe Awards", tall: false },
     { image: collab2Img, caption: "Product Launch Event", tall: true },
-    { image: collab3Img, caption: "R&D Lab Collaboration", tall: false },
+    { image: collab3Img, caption: "Maatritava Entrepreneurship Award", tall: false },
     { image: collab4Img, caption: "Strategic Partnership Signing", tall: true },
-    { image: collab5Img, caption: "Industry Conference Panel", tall: false },
-    { image: collab6Img, caption: "Botanical Sourcing Partners", tall: true },
+    { image: collab5Img, caption: "eRtail Award Franchise India", tall: false },
+    { image: collab6Img, caption: "Iconic Super Brand of the Year Award", tall: true },
   ];
 
   return (
