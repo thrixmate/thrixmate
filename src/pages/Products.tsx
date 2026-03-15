@@ -8,9 +8,19 @@ import antiGrayingCombo from "@/assets/products/Combo.jpg";
 import champiOilImg from "@/assets/home/homeoil.jpg";
 import woodenCombImg from "@/assets/wooden-comb.jpg";
 import combImg from "@/assets/home/comb.png";
-import hairComb from "@/assets/products/haircomb.jpg";
+
+import hairComb2 from "@/assets/products/haircomb2.jpg";
+import hairComb3 from "@/assets/products/haircomb3.jpg";
+import hairComb4 from "@/assets/products/haircomb4.jpg";
+import hairComb5 from "@/assets/products/haircomb5.jpg";
+import hairComb6 from "@/assets/products/haircomb6.jpg";
+import hairComb7 from "@/assets/products/haircomb7.jpg";
+import hairComb8 from "@/assets/products/haircomb8.jpg";
+import hairComb9 from "@/assets/products/haircomb9.jpg";
+import hairComb10 from "@/assets/products/haircomb10.jpg";
 import keratinImg from "@/assets/keratin-range.jpg";
 import antiGrayingVideo from "@/assets/home/1G.mp4";
+import ConfirmRedirect from "@/components/ConfirmRedirect";
 
 const products = [
   {
@@ -85,11 +95,76 @@ const products = [
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-  {
+ 
+   {
     name: "Natural Wooden Comb 2",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
-    img: hairComb,
+    img: hairComb2,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+    {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb3,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb4,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb5,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb6,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb7,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb8,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb9,
+    vegan: false,
+    url: "https://amzn.in/d/0000V6d1",
+  },
+   {
+    name: "Natural Wooden Comb 2",
+    benefit: "Stimulates scalp, reduces breakage",
+    category: "Tools",
+    img: hairComb10,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
@@ -150,8 +225,8 @@ const Products = () => {
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 {antiGraying.map((p, i) => (
-                  <ScrollReveal key={p.name} delay={i * 80}>
-                    <a
+                  <ScrollReveal key={`${p.name}-${i}`} delay={i * 80}>
+                    <ConfirmRedirect
                       href={p.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -183,7 +258,7 @@ const Products = () => {
                           </span>
                         </div>
                       </div>
-                    </a>
+                    </ConfirmRedirect>
                   </ScrollReveal>
                 ))}
               </div>
@@ -271,8 +346,8 @@ const Products = () => {
               {/* remaining products */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {others.map((p, i) => (
-                  <ScrollReveal key={p.name} delay={i * 80}>
-                    <a
+                  <ScrollReveal key={`${p.name}-${i}`} delay={i * 80}>
+                    <ConfirmRedirect
                       href={p.url}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -304,7 +379,7 @@ const Products = () => {
                           </span>
                         </div>
                       </div>
-                    </a>
+                    </ConfirmRedirect>
                   </ScrollReveal>
                 ))}
               </div>
@@ -312,8 +387,8 @@ const Products = () => {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {filtered.map((p, i) => (
-                <ScrollReveal key={p.name} delay={i * 80}>
-                  <a
+                <ScrollReveal key={`${p.name}-${i}`} delay={i * 80}>
+                  <ConfirmRedirect
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -345,7 +420,7 @@ const Products = () => {
                         </span>
                       </div>
                     </div>
-                  </a>
+                  </ConfirmRedirect>
                 </ScrollReveal>
               ))}
             </div>

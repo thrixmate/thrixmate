@@ -46,7 +46,7 @@ const Index = () => {
               <span className="gold-text">Naturally Darker Hair.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md mb-8 leading-relaxed">
-              Science-backed Formulation For root to tip hair wellness.
+              Science-backed formulation for root to tip hair wellness.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
