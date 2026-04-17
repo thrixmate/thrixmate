@@ -10,6 +10,7 @@ import champiOilImg2 from "@/assets/home/homeoil.jpg";
 import combImg from "@/assets/home/comb.png";
 import keratinImg from "@/assets/keratin-range.jpg";
 import antiGrayingVideo from "@/assets/home/1G.mp4";
+import heroVid from "@/assets/heroVid.mp4";
 import {
   Leaf,
   FlaskConical,
@@ -32,26 +33,38 @@ const Index = () => {
     <main>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
+        {/* Mobile Background Video */}
+        <div className="absolute inset-0 z-0 md:hidden">
+          <video
+            src={heroVid}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-secondary/80" />
+        </div>
         <GoldParticles />
         <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 pt-24 pb-16">
           <div className="animate-fade-up">
             <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4 font-medium">
               Premium Hair Wellness
             </p>
-            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-tight text-secondary mb-6">
+            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-tight text-secondary-foreground md:text-secondary mb-6">
               Stronger Roots.
               <br />
               Healthier Scalp.
               <br />
               <span className="gold-text">Naturally Darker Hair.</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-md mb-8 leading-relaxed">
+            <p className="text-lg text-secondary-foreground/80 md:text-muted-foreground max-w-md mb-8 leading-relaxed">
               Science-backed formulation for root to tip hair wellness.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="/products"
-                className="px-8 py-3.5 rounded-full border-2 border-primary text-secondary text-sm font-medium tracking-wider uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="px-8 py-3.5 rounded-full border-2 border-primary text-secondary-foreground md:text-secondary text-sm font-medium tracking-wider uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
                 Explore Products
               </a>
