@@ -43,7 +43,7 @@ const Index = () => {
             playsInline
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-secondary/80" />
+          <div className="absolute inset-0 bg-secondary/20" />
         </div>
         <GoldParticles />
         <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 pt-24 pb-16">
