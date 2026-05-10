@@ -60,13 +60,13 @@ const About = () => {
     },
     {
       name: "Adv. Megha Mehta",
-      designation: " LEGAL AFFAIRS ",
+      designation: "LEGAL AFFAIRS ",
       image: visionary4Img,
       description: "Oversees the company’s legal affairs with expertise in corporate law, contracts, and intellectual property. Brings strategic legal insight and a strong compliance focus to support business operations and mitigate risks.",
     },
     {
       name: "Dr. Priyanka Goel",
-      designation: " Head - Content & Strategy",
+      designation: "Head - Content & Strategy",
       image: visionary6Img,
       description: "Leads content strategy with a strong foundation in medical science and evidence-based storytelling. She crafts clear, engaging healthcare narratives that build trust, strengthen brand identity, and combine insight with creativity to deliver impactful digital experiences.",
     },
