@@ -36,31 +36,31 @@ const About = () => {
   const visionaries = [
     {
       name: "Dr. Girish Pasricha",
-      designation: "Founder & CEO",
+      designation: "Founder",
       image: founderImg,
       description: "A visionary entrepreneur passionate about merging Ayurvedic wisdom with modern science to revolutionize hair wellness across India and beyond.",
     },
     {
       name: "Dr. Mohit Bhatia",
-      designation: "Co-Founder & COO",
+      designation: "Co-Founder",
       image: visionary1Img,
-      description: "With over a decade of experience in beauty innovation, Dr.Mohit Bhatia drives product development and ensures every formula meets the highest standards of purity.",
+      description: "With over 2 decades of experience in product innovation and beauty advancement, Dr. Mohit Bhatia drives product development and ensures every formula meets the highest standards of purity.",
     },
     {
       name: "Dr. Paras Bhatia",
-      designation: "Co-Founder & COO",
+      designation: "Co-Founder",
       image: visionary2Img,
       description: "Leads Operations and Digital Marketing with a strong blend of tech and marketing expertise. Focused on streamlining processes and delivering impactful customer experiences.",
     },
     {
       name: "Dr. Harsimran Kaur",
-      designation: "Co-Founder & CTO",
+      designation: "HEAD - STRATEGY AND INNOVATION",
       image: visionary3Img,
       description: "Heads Content, Strategy, and Design with a unique blend of scientific insight and creative vision. Drives brand excellence by ensuring product efficacy and elevating visual identity across all portfolio brands.",
     },
     {
       name: "Adv. Megha Mehta",
-      designation: "Co-Founder & CMO",
+      designation: " LEGAL AFFAIRS ",
       image: visionary4Img,
       description: "Oversees the company’s legal affairs with expertise in corporate law, contracts, and intellectual property. Brings strategic legal insight and a strong compliance focus to support business operations and mitigate risks.",
     },
