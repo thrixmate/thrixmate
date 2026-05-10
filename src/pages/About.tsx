@@ -39,7 +39,7 @@ const About = () => {
       designation: "Founder & CEO",
       image: founderImg,
       description: "A visionary entrepreneur passionate about merging Ayurvedic wisdom with modern science to revolutionize hair wellness across India and beyond.",
-    }, 
+    },
     {
       name: "Dr. Mohit Bhatia",
       designation: "Co-Founder & COO",
@@ -64,19 +64,19 @@ const About = () => {
       image: visionary4Img,
       description: "Oversees the company’s legal affairs with expertise in corporate law, contracts, and intellectual property. Brings strategic legal insight and a strong compliance focus to support business operations and mitigate risks.",
     },
-     {
+    {
       name: "Dr. Priyanka Goel",
       designation: "Lead - Content & Strategy",
       image: visionary6Img,
       description: "Leads content strategy with a strong foundation in medical science and evidence-based storytelling. She crafts clear, engaging healthcare narratives that build trust, strengthen brand identity, and combine insight with creativity to deliver impactful digital experiences.",
     },
-     {
+    {
       name: "Shreya Sawhney",
       designation: "HEAD - DESIGN",
       image: visionary5Img,
       description: "Leads design with a strong foundation in branding and visual storytelling. She creates digital experiences that strengthen brand identity and drive engagement, blending creativity with insight to deliver impactful solutions.",
     },
-   
+
   ];
 
   const advisors = [
@@ -133,7 +133,8 @@ const About = () => {
             About Thrixmate
           </h1>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Premium clinical hair wellness, crafted for those who refuse to compromise on quality.
+            Premium clinical hair wellness, formulated by physicians. Designed
+            for visible results and confidence you can feel.
           </p>
         </ScrollReveal>
       </section>
@@ -149,8 +150,12 @@ const About = () => {
               <div>
                 <Quote size={48} className="text-primary/30 mb-4" />
                 <blockquote className="font-heading text-2xl md:text-3xl text-secondary leading-snug mb-6 italic">
-                  "We didn't start Thrixmate to sell products. We started it to solve a problem — greying hair treated with harmful chemicals. Nature already had the answer; we just needed science to unlock it."
+                  "We didn't create Thrixmate to sell products. We created it to
+                  solve what modern haircare ignores."
                 </blockquote>
+                <p className="text-sm font-semibold md:text-xl text-secondary mb-6">
+                  Science-led. Natural-backed. Result-Driven.
+                </p>
                 <div className="flex items-center gap-4">
                   <img src={founderImg} alt="Dr. Girish Pasricha" className="w-14 h-14 rounded-full object-cover border-2 border-primary" />
                   <div>

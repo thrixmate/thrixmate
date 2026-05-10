@@ -25,7 +25,7 @@ import ConfirmRedirect from "@/components/ConfirmRedirect";
 const products = [
   {
     name: "Anti-Graying Shampoo",
-    benefit: "Delays premature graying",
+    benefit: "Gently cleanses while supporting natural pigment balance",
     category: "Anti-Graying",
     img: antiGrayingShampoo,
     vegan: true,
@@ -33,7 +33,7 @@ const products = [
   },
   {
     name: "Anti-Graying Conditioner",
-    benefit: "Nourishes & protects melanin",
+    benefit: "Smoothens and strengthens hair while maintaining pigment health",
     category: "Anti-Graying",
     img: antiGrayingConditioner,
     vegan: true,
@@ -41,7 +41,7 @@ const products = [
   },
   {
     name: "Anti-Graying Serum",
-    benefit: "Concentrated gray-delay treatment",
+    benefit: "Concentrated care designed for targeted grey control",
     category: "Anti-Graying",
     img: antiGrayingSerum,
     vegan: true,
@@ -49,15 +49,16 @@ const products = [
   },
   {
     name: "Anti-Graying Combo",
-    benefit: "Concentrated gray-delay treatment",
+    benefit: "Complete 3-step routine to target premature greying",
     category: "Combo",
     img: antiGrayingCombo,
     vegan: true,
+    isBestValue: true,
     url: "https://sciwell.black/products/anti-graying-serum",
   },
   {
     name: "Keratin Shampoo",
-    benefit: "Color protection & smoothness",
+    benefit: "Protects color while leaving hair smooth and manageable",
     category: "Keratin",
     img: keratinImg,
     vegan: true,
@@ -65,7 +66,7 @@ const products = [
   },
   {
     name: "Keratin Conditioner",
-    benefit: "Deep frizz control & shine",
+    benefit: "Smoothens frizz and enhances shine for healthier-looking hair",
     category: "Keratin",
     img: keratinImg,
     vegan: true,
@@ -73,15 +74,15 @@ const products = [
   },
   {
     name: "Keratin Combo",
-    benefit: "Deep frizz control & shine",
+    benefit: "Complete care for smoother, frizz-free, and healthier-looking hair",
     category: "Combo",
     img: keratinImg,
     vegan: true,
     url: "https://sciwell.black/products/keratin-conditioner",
   },
   {
-    name: "Champi Hair Oil",
-    benefit: "Traditional Ayurvedic nourishment",
+    name: "Saptkoot™ Champi Oil",
+    benefit: "A traditional blend of 7 herbs to strengthen from the roots and restore natural fullness",
     category: "Oils",
     img: champiOilImg,
     vegan: true,
@@ -89,79 +90,79 @@ const products = [
   },
   {
     name: "Natural Wooden Comb",
-    benefit: "Stimulates scalp, reduces breakage",
+    benefit: "Gentle detangling that helps reduce breakage and protect hair",
     category: "Tools",
     img: combImg,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
- 
-   {
-    name: "Natural Wooden Comb 2",
+
+  {
+    name: "Kid's Oval Brush",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb2,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-    {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Oval Paddle Brush-Regular",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb3,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Oval Paddle Brush-Large",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb4,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Men's Beard Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb5,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Detangling Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb6,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Tail Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb7,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Wide Tooth Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb8,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Bounce Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb9,
     vegan: false,
     url: "https://amzn.in/d/0000V6d1",
   },
-   {
-    name: "Natural Wooden Comb 2",
+  {
+    name: "Dressing Comb",
     benefit: "Stimulates scalp, reduces breakage",
     category: "Tools",
     img: hairComb10,
@@ -193,12 +194,17 @@ const Products = () => {
             Shop
           </p>
           <h1 className="font-heading text-4xl md:text-6xl font-bold text-secondary mb-4">
-            Our Complete Hair Wellness Collection
+            Solutions for Stronger, Healthier Hair
           </h1>
-          <p className="text-muted-foreground max-w-lg mx-auto">
-            Each product is crafted with clinical actives and Ayurvedic
-            botanicals for visible results.
+          <p className="text-muted-foreground max-w-lg mx-auto mb-8">
+            Physician-formulated care combining science and nature for real, visible results.
           </p>
+
+          <div className="mt-12 space-y-4">
+            <p className="text-sm font-medium tracking-widest text-primary uppercase">
+              • Anti-greying • Hair fall • Scalp health • Frizz control
+            </p>
+          </div>
         </ScrollReveal>
       </section>
 
@@ -210,11 +216,10 @@ const Products = () => {
               <button
                 key={cat}
                 onClick={() => setActive(cat)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium tracking-wider uppercase transition-all duration-300 ${
-                  active === cat
-                    ? "gold-gradient text-primary-foreground shadow-md"
-                    : "border border-border text-muted-foreground hover:border-primary hover:text-primary"
-                }`}
+                className={`px-6 py-2.5 rounded-full text-sm font-medium tracking-wider uppercase transition-all duration-300 ${active === cat
+                  ? "gold-gradient text-primary-foreground shadow-md"
+                  : "border border-border text-muted-foreground hover:border-primary hover:text-primary"
+                  }`}
               >
                 {cat}
               </button>
@@ -246,7 +251,12 @@ const Products = () => {
                             </span>
                           )}
                         </div>
-                        <div className="p-6">
+                        <div className="p-6 relative">
+                          {p.isBestValue && (
+                            <span className="absolute -top-4 left-6 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-[10px] font-bold tracking-widest uppercase shadow-lg z-10">
+                              Best Value
+                            </span>
+                          )}
                           <h3 className="font-heading text-lg font-semibold text-secondary mb-1">
                             {p.name}
                           </h3>
@@ -254,7 +264,6 @@ const Products = () => {
                             {p.benefit}
                           </p>
                           <span className="text-sm font-medium text-primary tracking-wider uppercase group-hover:underline">
-                            
                             Shop Now →
                           </span>
                         </div>
@@ -269,12 +278,15 @@ const Products = () => {
                 <div className="container mx-auto px-2 md:px-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                      <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
-                        Complete 3-Step Anti-Graying System
+                      <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-2">
+                        A 3-Step Routine to Target Premature Greying
                       </h2>
-                      <ol className="space-y-4 text-foreground">
+                      <p className="text-muted-foreground mb-8">
+                        Designed to work together for better, visible results.
+                      </p>
+                      <ol className="space-y-6 text-foreground">
                         <li className="flex items-start gap-4">
-                          <span className="min-w-[36px] h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                          <span className="min-w-[36px] h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold mt-1">
                             1
                           </span>
                           <div>
@@ -282,13 +294,12 @@ const Products = () => {
                               Anti-Graying Shampoo
                             </h4>
                             <p className="text-sm text-muted-foreground">
-                              Cleanses gently while preserving melanin and
-                              delaying gray onset.
+                              Gently cleanses while helping maintain natural hair color
                             </p>
                           </div>
                         </li>
                         <li className="flex items-start gap-4">
-                          <span className="min-w-[36px] h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                          <span className="min-w-[36px] h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold mt-1">
                             2
                           </span>
                           <div>
@@ -296,13 +307,12 @@ const Products = () => {
                               Anti-Graying Conditioner
                             </h4>
                             <p className="text-sm text-muted-foreground">
-                              Nourishes and protects hair to maintain pigment
-                              and strength.
+                              Strengthens and smoothens while supporting pigment retention
                             </p>
                           </div>
                         </li>
                         <li className="flex items-start gap-4">
-                          <span className="min-w-[36px] h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold">
+                          <span className="min-w-[36px] h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-semibold mt-1">
                             3
                           </span>
                           <div>
@@ -310,8 +320,7 @@ const Products = () => {
                               Anti-Graying Serum
                             </h4>
                             <p className="text-sm text-muted-foreground">
-                              Concentrated actives to support scalp health and
-                              delay graying.
+                              Targeted care designed to support pigment and overall hair health
                             </p>
                           </div>
                         </li>
@@ -368,7 +377,12 @@ const Products = () => {
                             </span>
                           )}
                         </div>
-                        <div className="p-6">
+                        <div className="p-6 relative">
+                          {p.isBestValue && (
+                            <span className="absolute -top-4 left-6 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-[10px] font-bold tracking-widest uppercase shadow-lg z-10">
+                              Best Value
+                            </span>
+                          )}
                           <h3 className="font-heading text-lg font-semibold text-secondary mb-1">
                             {p.name}
                           </h3>
@@ -409,7 +423,12 @@ const Products = () => {
                           </span>
                         )}
                       </div>
-                      <div className="p-6">
+                      <div className="p-6 relative">
+                        {p.isBestValue && (
+                          <span className="absolute -top-4 left-6 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-[10px] font-bold tracking-widest uppercase shadow-lg z-10">
+                            Best Value
+                          </span>
+                        )}
                         <h3 className="font-heading text-lg font-semibold text-secondary mb-1">
                           {p.name}
                         </h3>
@@ -417,7 +436,7 @@ const Products = () => {
                           {p.benefit}
                         </p>
                         <span className="text-sm font-medium text-primary tracking-wider uppercase group-hover:underline">
-                          Buy Now →
+                          Shop Now →
                         </span>
                       </div>
                     </div>
