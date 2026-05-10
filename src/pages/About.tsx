@@ -18,6 +18,11 @@ import award3Img from "@/assets/award-3.jpg";
 import award4Img from "@/assets/award-4.jpg";
 import award5Img from "@/assets/award-5.jpg";
 import award6Img from "@/assets/award-6.jpg";
+
+import gmp from "@/assets/about/gmp.webp";
+import iso from "@/assets/about/iso.webp";
+import mocra from "@/assets/about/mocra.webp";
+
 import collab1Img from "@/assets/collab-1.jpg";
 import collab2Img from "@/assets/collab-2.jpg";
 import collab3Img from "@/assets/collab-3.jpg";
@@ -102,6 +107,12 @@ const About = () => {
     { title: "Clean Beauty Pioneer", image: award4Img },
     { title: "Top Emerging D2C Brand", image: award5Img },
     { title: "Consumer Choice Award", image: award6Img },
+  ];
+
+  const ourCertifications = [
+    { title: "GMP", image: gmp },
+    { title: "ISO", image: iso },
+    { title: "MoCRA", image: mocra },
   ];
 
   const collaborations = [
@@ -213,7 +224,7 @@ const About = () => {
       </section>
 
       {/* Awards — Image + Name */}
-      <section className="section-padding bg-secondary text-primary-foreground">
+      {/* <section className="section-padding bg-secondary text-primary-foreground">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <ScrollReveal>
             <div className="text-center mb-14">
@@ -242,10 +253,39 @@ const About = () => {
             ))}
           </div>
         </div>
+      </section> */}
+
+
+      <section className="section-padding bg-secondary text-primary-foreground">
+        <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <p className="text-xs tracking-[0.4em] uppercase text-primary mb-3">Recognition</p>
+              <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4">Our Certifications</h2>
+            </div>
+          </ScrollReveal>
+          <div className="flex justify-center items-center gap-6">
+            {ourCertifications.map((award, i) => (
+              <ScrollReveal key={award.title} delay={i * 80}>
+                <div className="flex flex-col items-center text-center group bg-background w-40 overflow-hidden rounded-lg p-4 border border-primary/20 hover:border-primary/60 transition-all duration-500 hover:shadow-[0_0_20px_-5px_hsl(var(--gold)/0.4)]">
+                  <div className="w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 border border-primary/20 group-hover:border-primary/60 transition-all duration-500 group-hover:shadow-[0_0_20px_-5px_hsl(var(--gold)/0.4)]">
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                  </div>
+                  {/* <p className="font-heading text-sm font-semibold text-primary-foreground/90 leading-tight">{award.title}</p> */}
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Collaborations — Masonry Gallery */}
-      <section className="section-padding bg-cream-dark">
+      {/* <section className="section-padding bg-cream-dark">
         <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <ScrollReveal>
             <div className="text-center mb-14">
@@ -274,7 +314,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

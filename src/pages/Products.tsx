@@ -254,7 +254,8 @@ const Products = () => {
                             {p.benefit}
                           </p>
                           <span className="text-sm font-medium text-primary tracking-wider uppercase group-hover:underline">
-                            Buy Now →
+                            
+                            Shop Now →
                           </span>
                         </div>
                       </div>
@@ -375,7 +376,7 @@ const Products = () => {
                             {p.benefit}
                           </p>
                           <span className="text-sm font-medium text-primary tracking-wider uppercase group-hover:underline">
-                            Buy Now →
+                            Shop Now →
                           </span>
                         </div>
                       </div>

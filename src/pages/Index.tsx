@@ -51,12 +51,12 @@ const Index = () => {
             <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4 font-medium">
               Premium Hair Wellness
             </p>
-            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-tight text-secondary-foreground md:text-secondary mb-6">
+            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-tight gold-text mb-6">
               Stronger Roots.
               <br />
               Healthier Scalp.
               <br />
-              <span className="gold-text">Naturally Darker Hair.</span>
+              <span className="bg-clip-text bg-gradient-to-r from-gray-500 via-gray-900 to-black">Naturally Darker Hair.</span>
             </h1>
             <p className="text-lg text-secondary-foreground/80 md:text-muted-foreground max-w-md mb-8 leading-relaxed">
                Science-backed hair wellness, from root to tip
