@@ -269,10 +269,10 @@ const About = () => {
               <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4">Our Certifications</h2>
             </div>
           </ScrollReveal>
-          <div className="flex justify-center items-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 place-items-center">
             {ourCertifications.map((award, i) => (
               <ScrollReveal key={award.title} delay={i * 80}>
-                <div className="flex flex-col items-center text-center group bg-background w-40 overflow-hidden rounded-lg p-4 border border-primary/20 hover:border-primary/60 transition-all duration-500 hover:shadow-[0_0_20px_-5px_hsl(var(--gold)/0.4)]">
+                <div className="flex flex-col items-center text-center group bg-background w-full max-w-xs overflow-hidden rounded-lg p-4 border border-primary/20 hover:border-primary/60 transition-all duration-500 hover:shadow-[0_0_20px_-5px_hsl(var(--gold)/0.4)]">
                   <div className="w-full aspect-[3/4] rounded-xl overflow-hidden mb-3 border border-primary/20 group-hover:border-primary/60 transition-all duration-500 group-hover:shadow-[0_0_20px_-5px_hsl(var(--gold)/0.4)]">
                     <img
                       src={award.image}
@@ -281,7 +281,7 @@ const About = () => {
                       loading="lazy"
                     />
                   </div>
-                  {/* <p className="font-heading text-sm font-semibold text-primary-foreground/90 leading-tight">{award.title}</p> */}
+                  <p className="font-heading text-sm font-semibold text-primary-foreground/90 leading-tight">{award.title}</p>
                 </div>
               </ScrollReveal>
             ))}
