@@ -22,7 +22,7 @@ import {
   Check,
 } from "lucide-react";
 
-const SHOP_URL = "https://sciwell.black";
+const SHOP_URL = "https://www.sciwell.in";
 
 const Index = () => {
   useEffect(() => {
@@ -110,29 +110,29 @@ const Index = () => {
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              {
+                {
                 title: "Keratin Range",
                 desc: "Smooth, stronger hair with long-lasting frizz control",
                 img: keratinImg,
-                url: "https://amazon.com",
+                url: "https://www.sciwell.in",
               },
               {
                 title: "Anti-Graying Range",
                 desc: " Clinically designed solutions to slow premature greying",
                 img: antiGrayingImg,
-                url: "https://amazon.com",
+                url: "https://www.sciwell.in",
               },
               {
                 title: "Champi Oil",
                 desc: " Traditional blend of 7 carefully selected herbs, crafted to strengthen from roots and restore natural fullness",
                 img: champiOilImg1,
-                url: "https://amazon.com",
+                url: "https://www.sciwell.in",
               },
               {
                 title: "Combs and brushes",
                 desc: " Gentle detangling with reduced breakage and improved scalp health",
                 img: combImg,
-                url: "https://amazon.com",
+                url: "https://www.sciwell.in",
               },
             ].map((cat, i) => (
               <ScrollReveal key={cat.title} delay={i * 100}>
@@ -211,7 +211,7 @@ const Index = () => {
                   ))}
                 </div>
                 <a
-                  href={"https://amzn.in/d/06MdsIca"}
+                  href={"https://www.sciwell.in"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-3.5 rounded-full gold-gradient text-primary-foreground text-sm font-medium tracking-wider uppercase hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -270,7 +270,7 @@ const Index = () => {
               ))}
             </ul>
             <a
-              href={"https://amzn.in/d/0000V6d1"}
+              href={"https://www.sciwell.in"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3.5 rounded-full gold-gradient text-primary-foreground text-sm font-medium tracking-wider uppercase hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -306,7 +306,7 @@ const Index = () => {
               ))}
             </ul>
             <a
-              href={"https://amzn.in/d/0000V6d1"}
+              href={"https://www.sciwell.in"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3.5 rounded-full gold-gradient text-primary-foreground text-sm font-medium tracking-wider uppercase hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -360,7 +360,7 @@ const Index = () => {
               ))}
             </ul>
             <a
-              href={"https://amzn.in/d/0000V6d1"}
+              href={"https://www.sciwell.in"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3.5 rounded-full gold-gradient text-primary-foreground text-sm font-medium tracking-wider uppercase hover:shadow-lg hover:scale-105 transition-all duration-300"
@@ -467,7 +467,7 @@ const Index = () => {
               at the Root.
             </h2>
             <a
-              href={"https://amzn.in/d/0000V6d1"}
+              href={"https://www.sciwell.in"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-10 py-4 rounded-full gold-gradient text-primary-foreground text-sm font-medium tracking-wider uppercase hover:shadow-lg hover:scale-105 transition-all duration-300"
