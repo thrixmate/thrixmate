@@ -154,7 +154,7 @@ const About = () => {
                   solve what modern haircare ignores."
                 </blockquote>
                 <p className="text-sm font-semibold md:text-xl text-secondary mb-6">
-                  Science-led. Natural-backed. Result-Driven.
+                  Science-led. Nature-backed. Result-Driven.
                 </p>
                 <div className="flex items-center gap-4">
                   <img src={founderImg} alt="Dr. Girish Pasricha" className="w-14 h-14 rounded-full object-cover border-2 border-primary" />
